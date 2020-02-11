@@ -1,0 +1,49 @@
+html, body, #app {
+  height: 100%;
+  margin: 0;
+}
+#app {
+  display: flex; /* colocar na div pai */
+  
+  /*flex-direction: row;*/
+  /*align-items: center;*/ /*vertical=row, horizontal=column*/
+  /*justify-content: space-between;*/ /*horizontal=row*, vertical=column*/
+
+  /*flex-wrap: wrap;*/ /*quebra de linha*/ /*wrap-reverse*/
+  /*align-content: space-between;*/ /*alinhamento quando há quebra de linha*/
+
+
+}
+
+.box {
+  width: 200px;
+  height: 60px;
+  background: #f00;
+  margin: 5px;
+  /*flex-grow: 1;*/ /*aumenta na totalidade do container pai*/
+  /*flex-shrink: 0;*/ /*1=espreme para caber no container pai ate o with,0=cria barra de rolagem*/
+  /*flex: 1 1;*/ /*grow + shrink*/
+}
+
+.red {
+  order: 3; /*usado em telas responsivas*/
+}
+
+.green {
+  background: #0f0;
+  order: 2;
+}
+
+.blue {
+  background: #00f;
+  order: 0;
+}
+
+/**
+
+  
+
+
+
+
+**/
